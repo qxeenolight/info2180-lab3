@@ -31,6 +31,15 @@ onload = function(){
                 counter++;
                 gameState[index]="O";
             }
-        });    
+        }); 
+        
+        //Excercise 3
+        elem.addEventListener("mouseover", function(){
+            this.classList.add("hover");
+        });
+        
+        elem.addEventListener("mouseout", function(){
+            this.classList.remove("hover");
+        });
     });
 }
